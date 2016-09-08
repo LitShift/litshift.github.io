@@ -9,8 +9,29 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <title>LitShift</title>
+    
+    <script>
+      var url=https://www.google.co.jp;
+    </script>
   </head>
   <body>
-    <h1>LitShift</h1>
+    <h1>LitShift Search</h1>
+    <form action="action_page.php">
+      URL:<br>
+      <input type="text" name="firstname" id="demo" value="https://www.google.co.jp">
+      </br>
+      <input type="submit" value="Submit" onclick="geturlShou()">
+    </form>
+    <p id="ParaShou"></p>
+    <iframe src=searchURL>
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+    <script>
+      function geturlShou() {
+        url=document.getElementById('demo').value;
+        document.getElementById('ParaShou').innerHTML="url"
+      }
+    </script>
+
   </body>
 </html>
