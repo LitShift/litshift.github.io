@@ -30,6 +30,8 @@ We use the <code>upload-and-download</code> method to share and pay with the <co
 <h2>
 <a id="create-an-account-today" class="anchor" href="#create-an-account-today" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./Create an Account today!</h2>
 
+<p>You do not need an account these days! Feel free to upload your apps! If you want to publish with the standard Store, upload by clicking here.</p>
+
 <h2>
 <a id="terms-of-use" class="anchor" href="#terms-of-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./Terms of use</h2>
 
@@ -40,7 +42,18 @@ We use the <code>upload-and-download</code> method to share and pay with the <co
 
 <p>Upload your App without an account by simply clicking "Upload App" make sure your file type is a "apk" file.</p>
 
-<div class="sites-attachments-row"><div style="position:relative"><div id="sites-attachments-add-file-btn" class="sites-attachments-button"><a href="javascript:;" role="button"><div class="sites-attachments-button-element"><span class="sites-symbol" aria-hidden="true"></span></div><div class="sites-attachments-button-element">Upload App</div></a></div><input type="file" multiple="" style="height: 0px; visibility: hidden; position: absolute;"></div></div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Uploaded Apps" title="Apps"><div class="sites-translucent sites-symbol" aria-hidden="true"></div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="https://ssl.gstatic.com/sites/p/4469b5/system/app/images/spinner.gif"></span><div class="sites-attachments-update-text">Updating Feed...</div></div></div><div class="sites-attachments-separator"></div>
+<div class="sites-attachments-row"><div style="position:relative"><div id="sites-attachments-add-file-btn" class="sites-attachments-button"><a href="javascript:;" role="button"><div class="sites-attachments-button-element"><span class="sites-symbol" aria-hidden="true"></span></div><div class="sites-attachments-button-element">Upload Apps</div></a></div><input type="file" multiple="" style="height: 0px; visibility: hidden; position: absolute;"></div></div>
+<script type="text/javascript">
+                  JOT_addListener('pageLoaded', function() {
+                    sites.attachments.PageAttachmentsUtils.initUploadButton('sites-attachments-add-file-btn');
+                  });
+                </script>
+<div style="height: 10px"></div>
+</div>
+</div>
 
 <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.krlNDzQq4UQ.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-1sKXim1lk_Z1AyYD0rbD4xIG8lw/cb=gapi.loaded_0" async=""></script><script type="text/javascript">/* Copyright 2008 Google. */ (function() { (function(){function e(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(d){}};this.tick("start",null,a)}var a,d;window.performance&&(d=(a=window.performance.timing)&&a.responseStart);var f=0<d?new e(d):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_","_wtsrt",d),
 b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
